@@ -422,15 +422,84 @@ h1 {
     border: 0; color: transparent; z-index: -1;
 }
 
+/* ATS Linear block — invisible visually, readable by PDF parsers */
+.ats-linear {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 1px;
+    color: transparent;
+    white-space: pre;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+}
+@media print {
+    .ats-linear {
+        position: static;
+        left: auto;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+        font-size: 5pt;
+        color: #ffffff;
+        background: #ffffff;
+        white-space: pre-wrap;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.3;
+        page-break-before: always;
+        break-before: page;
+        padding: 40px 48px;
+    }
+}
+
 /* Print */
 @media print {
     @page { size: letter; margin: 0; }
     .top-navbar { display: none !important; }
-    body { background: none; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    h1 { background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: var(--text-dark) !important; }
-    .viewer { gap: 0; margin: 0; }
-    .physical-page { box-shadow: none; width: 816px !important; page-break-after: always; }
+    body {
+        background: none !important;
+        background-image: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    h1 {
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: var(--text-dark) !important;
+        color: var(--text-dark) !important;
+    }
+    .viewer {
+        gap: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+    .physical-page {
+        box-shadow: none !important;
+        width: 816px !important;
+        height: 1056px !important;
+        overflow: hidden !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .physical-page:last-child {
+        page-break-after: auto !important;
+        break-after: auto !important;
+    }
     .physical-page::before { display: block !important; }
+    .ai-agent-block { display: none !important; }
+    .ats-hidden { display: none !important; }
 }
 
 /* ── Projects ── */
@@ -454,4 +523,46 @@ h1 {
     color: var(--text-main);
     line-height: 1.6;
     text-align: justify;
+}
+
+/* ── AI Agent block — invisible everywhere, metadata only ── */
+.ai-agent-block {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Force page break for JSON block */
+.force-page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+/* ── JSON Machine-Readable Block ── */
+.json-block {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6pt;
+    line-height: 1.5;
+    border-left: 6px solid var(--accent-2);
+    box-sizing: border-box;
+    width: 100%;
+}
+.json-block pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+}
+.json-block code {
+    color: #e2e8f0;
+    font-weight: 500;
 }
