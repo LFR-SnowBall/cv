@@ -1,0 +1,457 @@
+/* CV — Luis Fernando Real Jaimes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-outer: #0f1724;
+    --page-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --text-dark: #0f172a;
+    --accent-1: #06b6d4;   /* cyan */
+    --accent-2: #6366f1;   /* indigo */
+    --accent-3: #10b981;   /* emerald */
+    --border-light: #e2e8f0;
+    --glass-bg: rgba(6, 182, 212, 0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--bg-outer);
+    color: var(--text-main);
+    line-height: 1.55;
+    padding: 2.5rem 0 4rem;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(99,102,241,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(6,182,212,0.08) 0%, transparent 50%);
+}
+
+/* Navbar */
+.top-navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(15,23,36,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(99,102,241,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.65rem 1rem;
+    z-index: 100;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+}
+.nav-brand {
+    color: var(--accent-1);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.nav-brand span { color: var(--accent-2); }
+.nav-actions { display: flex; gap: 0.75rem; align-items: center; }
+.nav-btn {
+    background: transparent;
+    border: 1px solid rgba(99,102,241,0.4);
+    color: #94a3b8;
+    padding: 3px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.nav-btn:hover {
+    background: rgba(99,102,241,0.15);
+    border-color: var(--accent-2);
+    color: white;
+}
+
+/* Viewer */
+.viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3.5rem;
+}
+
+/* Page */
+.physical-page {
+    width: 816px;
+    min-height: 1056px;
+    background-color: var(--page-bg);
+    box-shadow:
+        0 0 0 1px rgba(99,102,241,0.15),
+        0 20px 60px rgba(0,0,0,0.5),
+        0 0 80px rgba(6,182,212,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top accent bar */
+.physical-page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-2), var(--accent-1), var(--accent-3));
+    z-index: 20;
+}
+
+.page-content {
+    padding: 44px 52px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+/* ── Header ── */
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-light);
+}
+.header-left { flex: 1; }
+
+h1 {
+    font-size: 28pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin-bottom: 0.35rem;
+    background: linear-gradient(120deg, var(--text-dark) 30%, var(--accent-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.headline {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.01em;
+}
+
+.badge-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 0.7rem; }
+.badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+}
+.badge-cyan  { background: rgba(6,182,212,0.1);  color: #0891b2; border: 1px solid rgba(6,182,212,0.3); }
+.badge-indigo{ background: rgba(99,102,241,0.1); color: #4f46e5; border: 1px solid rgba(99,102,241,0.3); }
+.badge-green { background: rgba(16,185,129,0.1); color: #059669; border: 1px solid rgba(16,185,129,0.3); }
+.badge-slate { background: rgba(100,116,139,0.1);color: #475569; border: 1px solid rgba(100,116,139,0.3); }
+
+/* Contact grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 12px;
+}
+.contact-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-item a { color: var(--accent-2); text-decoration: none; }
+.contact-item a:hover { text-decoration: underline; }
+.c-icon { font-size: 9pt; }
+
+/* Photo */
+.header-photo img {
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 10px;
+    border: 2px solid var(--accent-1);
+    box-shadow: 0 0 20px rgba(6,182,212,0.2);
+    display: block;
+}
+.header-photo-placeholder {
+    width: 110px;
+    height: 130px;
+    border-radius: 10px;
+    border: 2px dashed rgba(99,102,241,0.4);
+    background: rgba(99,102,241,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* ── Section headings ── */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 1.1rem 0 0.65rem;
+}
+.section-title-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-light), transparent);
+}
+.section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-2);
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.2);
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+/* ── Profile text ── */
+.profile-text {
+    font-size: 9pt;
+    color: var(--text-main);
+    line-height: 1.65;
+    text-align: justify;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+    border-left: 3px solid var(--accent-2);
+    border-radius: 0 6px 6px 0;
+    padding: 0.8rem 1rem;
+}
+
+/* ── Experience timeline ── */
+.timeline { position: relative; padding-left: 1.6rem; }
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 4px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent-2), var(--accent-1), transparent);
+}
+
+.job {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px dashed var(--border-light);
+}
+.job:last-child { border-bottom: none; margin-bottom: 0; }
+
+.job::before {
+    content: '';
+    position: absolute;
+    left: -1.35rem; top: 6px;
+    width: 10px; height: 10px;
+    background: var(--page-bg);
+    border: 2.5px solid var(--accent-2);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(99,102,241,0.4);
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.2rem;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+.job-title {
+    font-size: 10.5pt;
+    font-weight: 800;
+    color: var(--accent-2);
+}
+.job-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7.5pt;
+    color: var(--accent-1);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.job-company {
+    font-size: 9pt;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+}
+.job-desc {
+    list-style: none;
+    padding: 0;
+}
+.job-desc li {
+    font-size: 8.5pt;
+    color: var(--text-main);
+    padding: 0.15rem 0 0.15rem 1.1rem;
+    text-align: justify;
+    position: relative;
+    line-height: 1.55;
+}
+.job-desc li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-1);
+    font-size: 8pt;
+}
+.job-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 0.45rem;
+}
+.job-tech span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6.8pt;
+    font-weight: 600;
+    background: var(--glass-bg);
+    color: #0891b2;
+    border: 1px solid rgba(6,182,212,0.2);
+    padding: 1px 7px;
+    border-radius: 10px;
+}
+
+/* ── Skills ── */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.7rem;
+}
+.skill-cat-title {
+    font-size: 8pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dark);
+    margin-bottom: 0.35rem;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--border-light);
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.skill-tags span {
+    font-size: 7pt;
+    font-weight: 600;
+    background: #f8fafc;
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ── Education ── */
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f8fafc;
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--accent-3);
+    border-radius: 0 6px 6px 0;
+    padding: 0.75rem 1rem;
+}
+.edu-title {
+    font-size: 9.5pt;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.15rem;
+}
+.edu-sub {
+    font-size: 8pt;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+}
+.edu-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    color: var(--accent-3);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ── AI Highlight box ── */
+.ai-highlight {
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-left: 4px solid var(--accent-2);
+    border-radius: 0 8px 8px 0;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.5rem;
+    color: #e2e8f0;
+}
+.ai-highlight-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--accent-1);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+}
+.ai-highlight p {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    color: #cbd5e1;
+    text-align: justify;
+}
+
+/* ── Two col layout ── */
+.two-col { display: flex; gap: 2rem; }
+.col-main { flex: 1.3; }
+.col-side { flex: 1; }
+
+/* ATS */
+.ats-hidden {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap;
+    border: 0; color: transparent; z-index: -1;
+}
+
+/* Print */
+@media print {
+    @page { size: letter; margin: 0; }
+    .top-navbar { display: none !important; }
+    body { background: none; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    h1 { background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: var(--text-dark) !important; }
+    .viewer { gap: 0; margin: 0; }
+    .physical-page { box-shadow: none; width: 816px !important; page-break-after: always; }
+    .physical-page::before { display: block !important; }
+}
+
+/* ── Projects ── */
+.project-block {
+    background: #f8fafc;
+    border: 1px solid var(--border-light);
+    border-top: 3px solid var(--accent-1);
+    border-radius: 0 0 6px 6px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.6rem;
+}
+.project-name {
+    font-size: 10pt;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.3rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+.project-desc {
+    font-size: 8.5pt;
+    color: var(--text-main);
+    line-height: 1.6;
+    text-align: justify;
+}

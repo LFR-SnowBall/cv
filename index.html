@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Fernando Real Jaimes — Tech Lead · Arquitecto de Microservicios · AI-Augmented Engineering</title>
+    <meta name="description" content="CV de Luis Fernando Real Jaimes: Tech Lead con más de 6 años construyendo sistemas backend a escala internacional, especializado en Java/Spring Boot, AWS y adopción estratégica de IA en equipos de ingeniería.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="top-navbar">
+    <span class="nav-brand">$ <span>luis-fernando</span> --cv --mode tech-lead</span>
+    <div class="nav-actions">
+        <a class="nav-btn" href="https://linkedin.com/in/inglfr" target="_blank">LinkedIn</a>
+        <a class="nav-btn" href="https://github.com/inglfr" target="_blank">GitHub</a>
+        <a class="nav-btn" href="#" onclick="window.print(); return false;">Imprimir PDF</a>
+    </div>
+</nav>
+
+<div class="viewer">
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PÁGINA 1 — HEADER + PERFIL + EXPERIENCIA CINÉPOLIS           -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- HEADER -->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1>Luis Fernando<br>Real Jaimes</h1>
+                    <p class="headline">Tech Lead &nbsp;·&nbsp; Arquitecto de Microservicios &nbsp;·&nbsp; AI-Augmented Engineering</p>
+                    <div class="badge-row">
+                        <span class="badge badge-cyan">Java / Spring Boot</span>
+                        <span class="badge badge-indigo">AWS · ECS · Fargate</span>
+                        <span class="badge badge-green">Pagos Digitales</span>
+                        <span class="badge badge-slate">Liderazgo Técnico</span>
+                        <span class="badge badge-cyan">Microservicios</span>
+                        <span class="badge badge-indigo">AI Engineering</span>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-item"><span class="c-icon">📱</span><a href="tel:+524433020586">+52 443 302 0586</a></div>
+                        <div class="contact-item"><span class="c-icon">📍</span>Morelia, Michoacán, México</div>
+                        <div class="contact-item"><span class="c-icon">🔗</span><a href="https://linkedin.com/in/inglfr" target="_blank">linkedin.com/in/inglfr</a></div>
+                        <div class="contact-item"><span class="c-icon">✉️</span><a href="mailto:luisitoreal01@gmail.com">luisitoreal01@gmail.com</a></div>
+                        <div class="contact-item"><span class="c-icon">🐙</span><a href="https://github.com/inglfr" target="_blank">github.com/inglfr</a></div>
+                        <div class="contact-item"><span class="c-icon">🌍</span>Disponible: Remoto · Híbrido · Presencial</div>
+                        <div class="contact-item"><span class="c-icon">🗣️</span>Español (nativo) · Inglés (intermedio)</div>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="profile.jpg" alt="Luis Fernando Real Jaimes"
+                         onerror="this.parentElement.innerHTML='<div class=\'header-photo-placeholder\'>foto<br>profile.jpg</div>'">
+                </div>
+            </div>
+
+            <!-- PERFIL -->
+            <div class="section-title">
+                <span class="section-label">Perfil Profesional</span>
+                <div class="section-title-line"></div>
+            </div>
+            <p class="profile-text">
+                Ingeniero de software con más de <strong>6 años de experiencia</strong> diseñando, construyendo y liderando sistemas backend a escala internacional.
+                Ejercí de facto como <strong>Tech Lead</strong> en Cinépolis Digital Channels, una de las cadenas de cines más grandes del mundo,
+                arquitectando y migrando servicios críticos de pagos y sincronización para 7 países sin el título formal.
+                Pionero en la <strong>adopción estratégica de IA generativa</strong> como herramienta de ingeniería dentro del equipo:
+                construí sistemas autónomos de soporte, diagnóstico y generación de código que multiplicaron la capacidad del equipo
+                y redujeron costos operativos en AWS. Participante en la <strong>AWS AI League 2025</strong> por invitación directa de AWS.
+                Busco un rol de <strong>Tech Lead o TPO</strong> donde el liderazgo técnico, la arquitectura de sistemas y la integración
+                inteligente de IA sean parte central de la estrategia.
+            </p>
+
+            <!-- EXPERIENCIA — CINÉPOLIS -->
+            <div class="section-title">
+                <span class="section-label">Experiencia Profesional</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Backend Engineer · Tech Lead de facto</span>
+                        <span class="job-date">Jul 2023 → Oct 2026</span>
+                    </div>
+                    <div class="job-company">Cinépolis Digital Channels &nbsp;—&nbsp; Morelia, México · Presencial &nbsp;·&nbsp; <em>3 años 4 meses</em></div>
+                    <ul class="job-desc">
+                        <li>Lideré técnicamente el departamento de Tickets y Sincronización: coordinación de dailys, planeación de migraciones y soporte continuo al equipo.</li>
+                        <li>Arquitecté y desarrollé el <strong>Order Manager</strong>, orquestador central del ciclo de vida de órdenes de boletos y alimentos para 7 países, con soporte de rutas legadas y estandarizadas y reconciliación asíncrona con Redis.</li>
+                        <li>Lideré la <strong>migración completa de servicios Python a Java/Spring Boot</strong> en los dominios de Tickets y Pagos, definiendo un SDK canónico compartido con DTOs, factories y clientes HTTP reutilizables por todos los servicios del dominio.</li>
+                        <li>Integré pasarelas de pago internacionales (<strong>DeUna, PayPal, MercadoPago, JusPay</strong>) con workers de reconciliación asíncrona y validación de invariantes de reserva contra Vista Connect API.</li>
+                        <li>Diseñé el sistema de <strong>enrutamiento dual por procesador</strong> para soporte dinámico de Vista e INDY por país y cine, con fallback seguro compatible con clientes no migrados.</li>
+                        <li>Desarrollé <strong>extractores en tiempo real</strong> con Debezium + Kafka para sincronizar bases de datos locales de cines (SQL Server/Vista CDC) con AWS, responsable técnico internacional de esta capa.</li>
+                        <li>Construí por iniciativa propia un <strong>sincronizador de emergencia para España</strong> (ECS Python async) en una noche: capaz de sincronizar 500 cines con horarios y películas en 5 minutos — liberado como parche para salvar el lanzamiento del país.</li>
+                        <li>Desarrollé un <strong>proxy de BackOffice multi-región</strong> para el equipo de soporte, actuando como bridge seguro entre el sistema interno y Vista Connect API, protegiendo tokens y exponiendo solo API Keys.</li>
+                        <li>Responsable del <strong>pipeline CI/CD</strong> en AWS ECS/Fargate con CodeArtifact, Bitbucket Pipelines y gates de calidad: JaCoCo ≥ 90%, Checkstyle, PMD y Checkmarx One (SAST/SCA).</li>
+                        <li>Participante en la <strong>AWS AI League 2025</strong> representando a Cinépolis por invitación directa de AWS, con implementaciones sobre Amazon Q.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Java 21/25</span><span>Spring Boot</span><span>Python</span><span>AWS ECS/Fargate</span>
+                        <span>Redis</span><span>Kafka</span><span>Debezium</span><span>DynamoDB</span>
+                        <span>Docker</span><span>Maven</span><span>SQL Server</span><span>Step Functions</span>
+                        <span>Lambda</span><span>Checkmarx</span><span>JaCoCo</span><span>Amazon Q</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PÁGINA 2 — EXPERIENCIA PREVIA + IA + PROYECTOS              -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <div class="section-title">
+                <span class="section-label">Experiencia Profesional (cont.)</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Knotion -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Líder del Departamento Web · Full Stack Developer</span>
+                        <span class="job-date">Dic 2021 → Jul 2023</span>
+                    </div>
+                    <div class="job-company">Knotion &nbsp;—&nbsp; Morelia, México · Presencial &nbsp;·&nbsp; <em>1 año 8 meses</em></div>
+                    <ul class="job-desc">
+                        <li>Encargado del departamento de desarrollo web, con un desarrollador a cargo: delegación de tareas, mentoría y coordinación directa con la PM para planeación de sprints.</li>
+                        <li>Desarrollé el sistema <strong>LARSA/MARSA</strong> de medición de progreso estudiantil en Angular, con generación de reportes PDF vía Lambda asíncrona, notificación por WebSocket (deferred), almacenamiento en S3 y distribución por CloudFront.</li>
+                        <li>Integré y mantuve el CMS de profesores (Vue/PHP/Spring Boot), backend Laravel del dashboard y optimización de consultas a base de datos para reducción de costos.</li>
+                        <li>Implementé pasarela de pagos para shop de uniformes por escuela y sitio WordPress dinámico de noticias mensuales.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Angular</span><span>Vue.js</span><span>Spring Boot</span><span>Laravel</span>
+                        <span>AWS Lambda</span><span>S3</span><span>CloudFront</span><span>WordPress</span>
+                    </div>
+                </div>
+
+                <!-- Weenjoy -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Full Stack Developer</span>
+                        <span class="job-date">Dic 2019 → Ene 2023</span>
+                    </div>
+                    <div class="job-company">Weenjoy Sharing Community / LinuxOpenSource S.A. de C.V. &nbsp;—&nbsp; Remoto &nbsp;·&nbsp; <em>3 años 2 meses</em></div>
+                    <ul class="job-desc">
+                        <li>Parte del equipo <em>Cowboys</em> de LinuxOpenSource: levantamiento de productos abandonados para empresas con equipos disueltos, desde cero hasta producción estable.</li>
+                        <li>Migración de la app de programa de lealtad (puntos y promociones por compras en negocios asociados) de <strong>Xamarin a Flutter/Dart</strong>, con lector QR, APIs y soporte multiplataforma (iOS, Android, Web).</li>
+                        <li>Desarrollo y mantenimiento del backend en Python/Flask con GraphQL, implementando el cliente GraphQL en Flutter antes de que existiera librería nativa.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Flutter</span><span>Dart</span><span>Python</span><span>Flask</span><span>GraphQL</span>
+                    </div>
+                </div>
+
+                <!-- LEGALEX -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Desarrollador Web Full Stack</span>
+                        <span class="job-date">Abr 2021 → Dic 2021</span>
+                    </div>
+                    <div class="job-company">LEGALEX GS &nbsp;—&nbsp; Morelia, México · Medio tiempo &nbsp;·&nbsp; <em>9 meses</em></div>
+                    <ul class="job-desc">
+                        <li>Migración e integración del sistema de <strong>firma electrónica</strong> a aplicación monolítica JSP: API para web y móvil, generación dinámica de documentos con plantillas de variables (<code>$variable</code>), validación con INE/RFC y flujo de firma por correo.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Java</span><span>JSP</span><span>Spring Boot</span><span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Prácticas UMSNH -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Practicante — Infraestructura y Virtualización</span>
+                        <span class="job-date">Ene 2020 → May 2020</span>
+                    </div>
+                    <div class="job-company">Instituto de Física y Matemáticas — UMSNH &nbsp;·&nbsp; <em>5 meses</em></div>
+                    <ul class="job-desc">
+                        <li>Sistema de portabilidad de entornos de investigación con Docker + LXC: migración de proyectos de tesis entre instituciones sin problemas de compatibilidad, administración de SAN con fibra óptica, InfiniBand e iSCSI.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Docker</span><span>LXC</span><span>Linux</span><span>SAN</span><span>iSCSI</span>
+                    </div>
+                </div>
+
+                <!-- IMCED -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Practicante — Infraestructura de Red</span>
+                        <span class="job-date">2016 · Prácticas</span>
+                    </div>
+                    <div class="job-company">IMCED &nbsp;—&nbsp; Morelia, México</div>
+                    <ul class="job-desc">
+                        <li>Montaje completo de infraestructura física: red, cableado estructurado, servidores Linux, dominios, certificados SSL, switches, enrutamiento, acceso remoto y VoIP.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Linux</span><span>VoIP</span><span>Redes</span><span>SSL</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PÁGINA 3 — IA + PROYECTOS + HABILIDADES + EDUCACIÓN         -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- IA -->
+            <div class="section-title">
+                <span class="section-label">AI-Augmented Engineering</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="ai-highlight">
+                <div class="ai-highlight-title">// Adopción estratégica de IA como multiplicador de ingeniería</div>
+                <p>
+                    Fui pionero en la adopción de IA generativa en Cinépolis Digital Channels, comenzando con GitHub Copilot
+                    para acelerar migraciones Python → Java y evolucionando hacia un ecosistema completo de ingeniería aumentada con Kiro.
+                    Construí un sistema de soporte autónomo en Slack capaz de escuchar errores, revisar logs, diagnosticar causas raíz
+                    y proponer fixes — integrando MCPs con servicios de Atlassian (Jira, Confluence) para contexto enriquecido.
+                    Desarrollé skills, subagents y flujos de orquestación que llegaron a generar el <strong>98% de las pruebas unitarias</strong>,
+                    documentar automáticamente, diagramar arquitecturas con justificación técnica y revisar código antes de cada commit.
+                    Para sostener esta capacidad de forma independiente y multi-herramienta, diseñé el proyecto <strong>.brain</strong>:
+                    un sistema de memoria centralizada y persistente que permite trabajar con múltiples IAs sin perder contexto entre sesiones,
+                    proyectos o equipos. Participante en la <strong>AWS AI League 2025</strong> por invitación directa de AWS.
+                </p>
+            </div>
+
+            <!-- PROYECTOS -->
+            <div class="section-title">
+                <span class="section-label">Proyectos Personales</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="two-col">
+                <div class="col-main">
+                    <div class="project-block">
+                        <div class="project-name">.brain — Central AI Brain</div>
+                        <div class="project-desc">
+                            Sistema de memoria centralizada y persistente para orquestación multi-IA. Permite que múltiples herramientas
+                            de IA (Kiro, Claude, Copilot, modelos locales) compartan contexto, reglas de arquitectura, conocimiento
+                            de proyectos y lecciones aprendidas sin reentrenamiento. Diseñado para equipos distribuidos y flujos
+                            de ingeniería aumentada por IA a escala.
+                        </div>
+                        <div class="job-tech" style="margin-top:0.4rem">
+                            <span>AI Orchestration</span><span>MCP</span><span>Kiro</span>
+                            <span>Multi-agent</span><span>git-crypt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-side">
+                    <div class="project-block">
+                        <div class="project-name">TrainVive</div>
+                        <div class="project-desc">
+                            App móvil de entrenamiento físico con rutinas adaptativas basadas en la evolución del usuario.
+                            IA integrada de forma eficiente: aprovecha estructuras de cálculo existentes para que el modelo
+                            mejore y personalice rutinas con mínimo consumo de recursos. En proceso de publicación en Google Play.
+                        </div>
+                        <div class="job-tech" style="margin-top:0.4rem">
+                            <span>Flutter</span><span>Dart</span><span>IA adaptativa</span><span>Google Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HABILIDADES -->
+            <div class="section-title">
+                <span class="section-label">Habilidades Técnicas</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-cat-title">Backend &amp; Lenguajes</div>
+                    <div class="skill-tags">
+                        <span>Java 21/25</span><span>Spring Boot</span><span>Python</span>
+                        <span>Flask</span><span>GraphQL</span><span>Dart/Flutter</span><span>JSP</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Cloud &amp; DevOps</div>
+                    <div class="skill-tags">
+                        <span>AWS ECS/Fargate</span><span>Lambda</span><span>Step Functions</span>
+                        <span>CodeArtifact</span><span>S3/CloudFront</span><span>Docker</span><span>SAM</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Datos &amp; Mensajería</div>
+                    <div class="skill-tags">
+                        <span>Redis</span><span>Kafka</span><span>Debezium</span>
+                        <span>DynamoDB</span><span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Arquitectura</div>
+                    <div class="skill-tags">
+                        <span>Microservicios</span><span>Event-Driven</span><span>SDK Design</span>
+                        <span>DDD</span><span>Clean Architecture</span><span>CDC</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Calidad &amp; Seguridad</div>
+                    <div class="skill-tags">
+                        <span>JaCoCo ≥90%</span><span>Checkstyle</span><span>PMD</span>
+                        <span>Checkmarx SAST/SCA</span><span>JUnit</span><span>Mockito</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">IA &amp; Herramientas</div>
+                    <div class="skill-tags">
+                        <span>Kiro</span><span>GitHub Copilot</span><span>Amazon Q</span>
+                        <span>MCP</span><span>Subagents</span><span>Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EDUCACIÓN -->
+            <div class="section-title">
+                <span class="section-label">Educación</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-title">Ingeniería en Tecnologías de la Información</div>
+                    <div class="edu-sub">Universidad Tecnológica de Morelia</div>
+                </div>
+                <span class="edu-year">2016 – 2020</span>
+            </div>
+
+            <!-- ATS hidden -->
+            <div class="ats-hidden">
+                Luis Fernando Real Jaimes. Tech Lead. TPO. Technical Product Owner. Senior Backend Engineer. Arquitecto de Microservicios.
+                Java Spring Boot AWS ECS Fargate Lambda Docker Redis Kafka Debezium DynamoDB Maven PostgreSQL MySQL SQL Server.
+                Pagos Digitales Fintech DeUna PayPal MercadoPago JusPay. CI/CD DevOps Checkmarx JaCoCo.
+                AI Augmented Engineering. GitHub Copilot. Amazon Q. Kiro. MCP. Prompt Engineering.
+                Morelia Mexico. Disponible remoto híbrido presencial. Más de 6 años experiencia.
+                Liderazgo técnico. Migración Python Java. AWS AI League 2025.
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /viewer -->
+
+</body>
+</html>
