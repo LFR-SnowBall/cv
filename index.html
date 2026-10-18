@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,11 @@
         "@type": "Person",
         "name": "Luis Fernando Real Jaimes",
         "jobTitle": "Tech Lead | Senior Backend Engineer | AI Engineering Lead",
-        "description": "Backend Engineer con más de 6 años de experiencia en Java/Spring Boot, AWS y arquitectura de microservicios. Pioneer en AI-Augmented Engineering. Disponible para roles de Tech Lead o TPO.",
+        "description": "Backend Engineer & Tech Lead with 6+ years of experience in Java/Spring Boot, AWS, and microservices architecture. Pioneer in AI-Augmented Engineering. Available for Tech Lead or TPO roles.",
         "email": "luisitoreal01@gmail.com",
         "telephone": "+524433020586",
         "url": "https://lfr-snowball.github.io/cv/",
+        "knowsLanguage": ["es", "en"],
         "sameAs": [
             "https://linkedin.com/in/inglfr",
             "https://github.com/LFR-SnowBall"
@@ -37,7 +38,7 @@
         },
         "worksFor": {
             "@type": "Organization",
-            "name": "Disponible — Open to opportunities"
+            "name": "Available — Open to opportunities"
         }
     }
     </script>
@@ -45,18 +46,26 @@
 <body>
 
 <nav class="top-navbar">
-    <span class="nav-brand">$ <span>luis-fernando</span> --cv --mode tech-lead</span>
+    <span class="nav-brand">$ <span>luis-fernando</span> --cv --mode tech-lead --lang <span id="nav-lang-code">es</span></span>
     <div class="nav-actions">
-        <a class="nav-btn" href="https://linkedin.com/in/inglfr" target="_blank">LinkedIn</a>
-        <a class="nav-btn" href="https://github.com/LFR-SnowBall" target="_blank">GitHub</a>
-        <a class="nav-btn" href="#" onclick="window.print(); return false;">Imprimir PDF</a>
+        <div class="lang-group" role="group" aria-label="Language selector">
+            <button id="btn-es" class="lang-btn active" onclick="setLang('es')" type="button">ES</button>
+            <button id="btn-en" class="lang-btn" onclick="setLang('en')" type="button">EN</button>
+        </div>
+        <div class="nav-divider"></div>
+        <a class="nav-btn" href="https://linkedin.com/in/inglfr" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="nav-btn" href="https://github.com/LFR-SnowBall" target="_blank" rel="noopener">GitHub</a>
+        <a id="btn-print" class="nav-btn" href="#" onclick="window.print(); return false;">Imprimir PDF</a>
     </div>
 </nav>
 
-<div class="viewer">
+<!-- ██████████████████████████████████████████████████████████████ -->
+<!--                    VERSIÓN EN ESPAÑOL (ES)                     -->
+<!-- ██████████████████████████████████████████████████████████████ -->
+<div id="viewer-es" class="viewer">
 
     <!-- ══════════════════════════════════════════════════════════════ -->
-    <!--  PÁGINA 1 — HEADER + PERFIL + EXPERIENCIA CINÉPOLIS           -->
+    <!--  PÁGINA 1 (ES) — HEADER + PERFIL + EXPERIENCIA CINÉPOLIS      -->
     <!-- ══════════════════════════════════════════════════════════════ -->
     <div class="physical-page">
         <div class="page-content">
@@ -77,9 +86,9 @@
                     <div class="contact-grid">
                         <div class="contact-item"><span class="c-icon">📱</span><a href="tel:+524433020586">+52 443 302 0586</a></div>
                         <div class="contact-item"><span class="c-icon">📍</span>Morelia, Michoacán, México</div>
-                        <div class="contact-item"><span class="c-icon">🔗</span><a href="https://linkedin.com/in/inglfr" target="_blank">linkedin.com/in/inglfr</a></div>
+                        <div class="contact-item"><span class="c-icon">🔗</span><a href="https://linkedin.com/in/inglfr" target="_blank" rel="noopener">linkedin.com/in/inglfr</a></div>
                         <div class="contact-item"><span class="c-icon">✉️</span><a href="mailto:luisitoreal01@gmail.com">luisitoreal01@gmail.com</a></div>
-                        <div class="contact-item"><span class="c-icon">🐙</span><a href="https://github.com/LFR-SnowBall" target="_blank">github.com/LFR-SnowBall</a></div>
+                        <div class="contact-item"><span class="c-icon">🐙</span><a href="https://github.com/LFR-SnowBall" target="_blank" rel="noopener">github.com/LFR-SnowBall</a></div>
                         <div class="contact-item"><span class="c-icon">🌍</span>Disponible: Remoto · Híbrido · Presencial</div>
                         <div class="contact-item"><span class="c-icon">🗣️</span>Español (nativo) · Inglés (intermedio)</div>
                     </div>
@@ -97,11 +106,11 @@
             </div>
             <p class="profile-text">
                 Ingeniero de software con más de <strong>6 años de experiencia</strong> diseñando, construyendo y liderando sistemas backend a escala internacional.
-                Ejercí de facto como <strong>Tech Lead</strong> en Cinépolis Digital Channels, una de las cadenas de cines más grandes del mundo,
-                arquitectando y migrando servicios críticos de pagos y sincronización para 7 países sin el título formal.
+                Lideré técnicamente equipos y arquitectura en <strong>Cinépolis Digital Channels</strong>, una de las cadenas de cines más grandes del mundo,
+                arquitectando y migrando servicios críticos de pagos y sincronización para 7 países.
                 Pionero en la <strong>adopción estratégica de IA generativa</strong> como herramienta de ingeniería dentro del equipo:
-                construí sistemas autónomos de soporte, diagnóstico y generación de código que multiplicaron la capacidad del equipo
-                y redujeron costos operativos en AWS. Participante en la <strong>AWS AI League 2025</strong> por invitación directa de AWS.
+                construí sistemas autónomos de soporte, diagnóstico y generación de código que multiplicaron la capacidad operativa
+                y redujeron costos en AWS. Participante en la <strong>AWS AI League 2025</strong> por invitación directa de AWS.
                 Busco un rol de <strong>Tech Lead o TPO</strong> donde el liderazgo técnico, la arquitectura de sistemas y la integración
                 inteligente de IA sean parte central de la estrategia.
             </p>
@@ -115,7 +124,7 @@
             <div class="timeline">
                 <div class="job">
                     <div class="job-meta">
-                        <span class="job-title">Backend Engineer / Tech Lead</span>
+                        <span class="job-title">Backend Engineer</span>
                         <span class="job-date">Jul 2023 → Oct 2026</span>
                     </div>
                     <div class="job-company">Cinépolis Digital Channels &nbsp;—&nbsp; Morelia, México · Presencial &nbsp;·&nbsp; <em>3 años 4 meses</em></div>
@@ -144,7 +153,7 @@
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════ -->
-    <!--  PÁGINA 2 — EXPERIENCIA PREVIA + IA + PROYECTOS              -->
+    <!--  PÁGINA 2 (ES) — EXPERIENCIA PREVIA                            -->
     <!-- ══════════════════════════════════════════════════════════════ -->
     <div class="physical-page">
         <div class="page-content">
@@ -243,7 +252,7 @@
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════ -->
-    <!--  PÁGINA 3 — IA + PROYECTOS + HABILIDADES + EDUCACIÓN + JSON   -->
+    <!--  PÁGINA 3 (ES) — IA + PROYECTOS + HABILIDADES + EDUCACIÓN      -->
     <!-- ══════════════════════════════════════════════════════════════ -->
     <div class="physical-page">
         <div class="page-content">
@@ -313,7 +322,7 @@
                 </div>
                 <div>
                     <div class="skill-cat-title">Calidad &amp; Seguridad</div>
-                    <div class="skill-tags"><span>JaCoCo >=90%</span><span>Checkstyle</span><span>PMD</span><span>Checkmarx SAST/SCA</span><span>JUnit</span><span>Mockito</span></div>
+                    <div class="skill-tags"><span>JaCoCo &gt;=90%</span><span>Checkstyle</span><span>PMD</span><span>Checkmarx SAST/SCA</span><span>JUnit</span><span>Mockito</span></div>
                 </div>
                 <div>
                     <div class="skill-cat-title">IA &amp; Herramientas</div>
@@ -338,14 +347,14 @@
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════ -->
-    <!--  PÁGINA 4 — MACHINE-READABLE JSON (ATS / AI / LLM)           -->
+    <!--  PÁGINA 4 (ES) — MACHINE-READABLE JSON (ATS / AI / LLM)        -->
     <!-- ══════════════════════════════════════════════════════════════ -->
-    <div class="physical-page">
+    <div class="physical-page dark-page">
         <div class="page-content" style="background:#0f172a;">
 
             <div class="section-title" style="margin-top:0.5rem;">
                 <span class="section-label" style="color:#06b6d4;border-color:rgba(6,182,212,0.4);background:rgba(6,182,212,0.1);">Machine-Readable Profile — ATS · AI · LLM</span>
-                <div class="section-title-line"></div>
+                <div class="section-title-line" style="background:linear-gradient(90deg, rgba(99,102,241,0.4), transparent);"></div>
             </div>
 
             <div class="json-block" style="font-size:5.5pt;height:calc(1056px - 120px);overflow:hidden;background:#0f172a;border-color:rgba(99,102,241,0.4);">
@@ -376,11 +385,11 @@
   },
   "experience": [
     {
-      "role": "Backend Engineer / Tech Lead",
+      "role": "Backend Engineer",
       "company": "Cinepolis Digital Channels",
       "period": "Jul 2023 - Oct 2026", "duration": "3 years 4 months",
       "highlights": [
-        "Tech Lead of Tickets and Synchronization department",
+        "Technical leadership of Tickets and Synchronization department",
         "Architected Order Manager: central payments orchestrator for 7 countries",
         "Led Python to Java/Spring Boot migration in Tickets and Payments domains",
         "Integrated DeUna, PayPal, MercadoPago, JusPay with async Redis reconciliation",
@@ -421,7 +430,410 @@
         </div>
     </div>
 
-</div><!-- /viewer -->
+</div><!-- /viewer-es -->
+
+
+<!-- ██████████████████████████████████████████████████████████████ -->
+<!--                    ENGLISH VERSION (EN)                        -->
+<!-- ██████████████████████████████████████████████████████████████ -->
+<div id="viewer-en" class="viewer hidden-lang">
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PAGE 1 (EN) — HEADER + PROFILE + CINÉPOLIS EXPERIENCE         -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- HEADER -->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <h1>Luis Fernando<br>Real Jaimes</h1>
+                    <p class="headline">Tech Lead &nbsp;·&nbsp; Microservices Architect &nbsp;·&nbsp; AI-Augmented Engineering</p>
+                    <div class="badge-row">
+                        <span class="badge badge-cyan">Java / Spring Boot</span>
+                        <span class="badge badge-indigo">AWS · ECS · Fargate</span>
+                        <span class="badge badge-green">Digital Payments</span>
+                        <span class="badge badge-slate">Technical Leadership</span>
+                        <span class="badge badge-cyan">Microservices</span>
+                        <span class="badge badge-indigo">AI Engineering</span>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-item"><span class="c-icon">📱</span><a href="tel:+524433020586">+52 443 302 0586</a></div>
+                        <div class="contact-item"><span class="c-icon">📍</span>Morelia, Michoacán, Mexico</div>
+                        <div class="contact-item"><span class="c-icon">🔗</span><a href="https://linkedin.com/in/inglfr" target="_blank" rel="noopener">linkedin.com/in/inglfr</a></div>
+                        <div class="contact-item"><span class="c-icon">✉️</span><a href="mailto:luisitoreal01@gmail.com">luisitoreal01@gmail.com</a></div>
+                        <div class="contact-item"><span class="c-icon">🐙</span><a href="https://github.com/LFR-SnowBall" target="_blank" rel="noopener">github.com/LFR-SnowBall</a></div>
+                        <div class="contact-item"><span class="c-icon">🌍</span>Available: Remote · Hybrid · On-site</div>
+                        <div class="contact-item"><span class="c-icon">🗣️</span>Spanish (native) · English (intermediate)</div>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="profile.jpg" alt="Luis Fernando Real Jaimes"
+                         onerror="this.parentElement.innerHTML='<div class=\'header-photo-placeholder\'>photo<br>profile.jpg</div>'">
+                </div>
+            </div>
+
+            <!-- PROFESSIONAL SUMMARY -->
+            <div class="section-title">
+                <span class="section-label">Professional Summary</span>
+                <div class="section-title-line"></div>
+            </div>
+            <p class="profile-text">
+                Software Engineer with <strong>6+ years of experience</strong> designing, building, and leading international-scale backend systems.
+                Spearheaded technical leadership and systems architecture at <strong>Cinépolis Digital Channels</strong>, one of the largest cinema chains worldwide,
+                architecting and migrating mission-critical payment and synchronization services across 7 countries.
+                Pioneer in <strong>strategic generative AI adoption</strong> as a core engineering multiplier:
+                built autonomous support, root-cause diagnostics, and code generation systems that multiplied team delivery capacity
+                while reducing AWS operational costs. Selected participant in the <strong>AWS AI League 2025</strong> by direct AWS invitation.
+                Seeking a <strong>Tech Lead or Technical Product Owner (TPO)</strong> role where technical leadership, distributed systems architecture,
+                and intelligent AI orchestration drive product strategy.
+            </p>
+
+            <!-- EXPERIENCE — CINÉPOLIS -->
+            <div class="section-title">
+                <span class="section-label">Professional Experience</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Backend Engineer</span>
+                        <span class="job-date">Jul 2023 → Oct 2026</span>
+                    </div>
+                    <div class="job-company">Cinépolis Digital Channels &nbsp;—&nbsp; Morelia, Mexico · On-site &nbsp;·&nbsp; <em>3 yrs 4 mos</em></div>
+                    <ul class="job-desc">
+                        <li>Led the Tickets &amp; Synchronization engineering department: coordinated daily standups, architected migration roadmaps, and provided continuous technical mentorship across the team.</li>
+                        <li>Architected and built the <strong>Order Manager</strong>, central lifecycle orchestrator for ticket and concession orders across 7 countries, supporting both legacy and standardized flows with asynchronous Redis reconciliation.</li>
+                        <li>Spearheaded the <strong>end-to-end migration from Python to Java/Spring Boot</strong> across the Tickets and Payments domains, designing a shared canonical SDK with reusable DTOs, factories, and resilient HTTP clients.</li>
+                        <li>Integrated international payment gateways (<strong>DeUna, PayPal, MercadoPago, JusPay</strong>) with asynchronous reconciliation workers and booking invariant validation against Vista Connect API.</li>
+                        <li>Designed a <strong>dual-processor dynamic routing engine</strong> supporting Vista and INDY per country and cinema, with backward-compatible fallback for non-migrated clients.</li>
+                        <li>Engineered <strong>real-time CDC data extractors</strong> using Debezium + Kafka to synchronize local cinema databases (SQL Server / Vista CDC) with AWS as international technical owner of the synchronization layer.</li>
+                        <li>Built an <strong>emergency async Python ECS synchronizer for Spain</strong> overnight on own initiative: synchronized 500 cinemas (schedules and movies) in 5 minutes — deployed as a critical patch that saved the country launch.</li>
+                        <li>Developed a <strong>multi-region BackOffice security proxy</strong> for the support team, acting as a secure bridge to Vista Connect API that shielded sensitive tokens and exposed scoped API Keys.</li>
+                        <li>Owned the <strong>CI/CD pipeline</strong> on AWS ECS/Fargate with CodeArtifact, Bitbucket Pipelines, and strict quality gates: JaCoCo &ge; 90%, Checkstyle, PMD, and Checkmarx One (SAST/SCA).</li>
+                        <li>Represented Cinépolis in the <strong>AWS AI League 2025</strong> by direct invitation from AWS, implementing automated infrastructure solutions with Amazon Q.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Java 21/25</span><span>Spring Boot</span><span>Python</span><span>AWS ECS/Fargate</span>
+                        <span>Redis</span><span>Kafka</span><span>Debezium</span><span>DynamoDB</span>
+                        <span>Docker</span><span>Maven</span><span>SQL Server</span><span>Step Functions</span>
+                        <span>Lambda</span><span>Checkmarx</span><span>JaCoCo</span><span>Amazon Q</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PAGE 2 (EN) — PREVIOUS EXPERIENCE                             -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <div class="section-title">
+                <span class="section-label">Professional Experience (cont.)</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Knotion -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Web Department Lead · Full Stack Developer</span>
+                        <span class="job-date">Dec 2021 → Jul 2023</span>
+                    </div>
+                    <div class="job-company">Knotion &nbsp;—&nbsp; Morelia, Mexico · On-site &nbsp;·&nbsp; <em>1 yr 8 mos</em></div>
+                    <ul class="job-desc">
+                        <li>Led the Web Development department with direct report supervision: task delegation, technical mentorship, and sprint planning in direct collaboration with Product Management.</li>
+                        <li>Engineered the <strong>LARSA/MARSA</strong> student progress analytics platform in Angular, featuring asynchronous PDF report generation via AWS Lambda, WebSocket (deferred) notifications, S3 storage, and CloudFront distribution.</li>
+                        <li>Integrated and maintained the teachers' CMS (Vue/PHP/Spring Boot) and Laravel dashboard backend, optimizing database queries to significantly reduce cloud infrastructure costs.</li>
+                        <li>Implemented a multi-school uniform e-commerce payment gateway and a dynamic monthly news platform on WordPress.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Angular</span><span>Vue.js</span><span>Spring Boot</span><span>Laravel</span>
+                        <span>AWS Lambda</span><span>S3</span><span>CloudFront</span><span>WordPress</span>
+                    </div>
+                </div>
+
+                <!-- Weenjoy -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Full Stack Developer</span>
+                        <span class="job-date">Dec 2019 → Jan 2023</span>
+                    </div>
+                    <div class="job-company">Weenjoy Sharing Community / LinuxOpenSource S.A. de C.V. &nbsp;—&nbsp; Remote &nbsp;·&nbsp; <em>3 yrs 2 mos</em></div>
+                    <ul class="job-desc">
+                        <li>Member of the LinuxOpenSource <em>Cowboys</em> SWAT team: rescued stalled or abandoned software products for companies with dissolved engineering teams, taking systems from recovery to stable production.</li>
+                        <li>Migrated the coalition loyalty &amp; rewards platform (points and promotions across partner merchants) from <strong>Xamarin to Flutter/Dart</strong>, adding QR scanning, APIs, and cross-platform support (iOS, Android, Web).</li>
+                        <li>Developed and maintained the Python/Flask GraphQL backend, building a custom GraphQL client layer in Flutter prior to official native library support.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Flutter</span><span>Dart</span><span>Python</span><span>Flask</span><span>GraphQL</span>
+                    </div>
+                </div>
+
+                <!-- LEGALEX -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Full Stack Web Developer</span>
+                        <span class="job-date">Apr 2021 → Dec 2021</span>
+                    </div>
+                    <div class="job-company">LEGALEX GS &nbsp;—&nbsp; Morelia, Mexico · Part-time &nbsp;·&nbsp; <em>9 mos</em></div>
+                    <ul class="job-desc">
+                        <li>Migrated and integrated an <strong>electronic signature platform</strong> into a monolithic JSP application: built web and mobile APIs, dynamic document templating engine (<code>$variable</code> injection), cryptographic core integration, and INE/RFC identity verification workflows.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Java</span><span>JSP</span><span>Spring Boot</span><span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- UMSNH Internship -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Infrastructure &amp; Virtualization Intern</span>
+                        <span class="job-date">Jan 2020 → May 2020</span>
+                    </div>
+                    <div class="job-company">Institute of Physics and Mathematics — UMSNH &nbsp;·&nbsp; <em>5 mos</em></div>
+                    <ul class="job-desc">
+                        <li>Built a portable research environment platform using Docker + LXC: enabled seamless migration of thesis environments across institutions without compatibility issues, and administered fiber-channel SAN, InfiniBand, and iSCSI storage.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Docker</span><span>LXC</span><span>Linux</span><span>SAN</span><span>iSCSI</span>
+                    </div>
+                </div>
+
+                <!-- IMCED -->
+                <div class="job">
+                    <div class="job-meta">
+                        <span class="job-title">Network Infrastructure Intern</span>
+                        <span class="job-date">2016 · Internship</span>
+                    </div>
+                    <div class="job-company">IMCED &nbsp;—&nbsp; Morelia, Mexico</div>
+                    <ul class="job-desc">
+                        <li>End-to-end physical and logical infrastructure setup: structured cabling, Linux servers, domains, SSL certificates, switching &amp; routing, remote maintenance access, and VoIP PBX administration.</li>
+                    </ul>
+                    <div class="job-tech">
+                        <span>Linux</span><span>VoIP</span><span>Networking</span><span>SSL</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PAGE 3 (EN) — AI + PROJECTS + SKILLS + EDUCATION              -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- AI -->
+            <div class="section-title">
+                <span class="section-label">AI-Augmented Engineering</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="ai-highlight">
+                <div class="ai-highlight-title">// Strategic AI adoption as an engineering force multiplier</div>
+                <p>
+                    Pioneered generative AI adoption at Cinépolis Digital Channels, starting with custom-trained GitHub Copilot workflows
+                    to accelerate complex Python &rarr; Java migrations and evolving into a full AI-augmented engineering ecosystem with Kiro.
+                    Built an autonomous Slack support agent capable of monitoring error alerts, inspecting service logs, diagnosing root causes,
+                    and proposing code fixes — integrating custom MCP pipelines with Jira and Confluence for context-efficient reasoning.
+                    Engineered specialized skills, subagents, and orchestration workflows that generate <strong>98% of unit test suites</strong>,
+                    auto-remediate Checkmarx/Checkstyle findings, and enforce architecture standards prior to commit.
+                    Created <strong>.brain</strong>: a centralized, persistent multi-AI memory architecture to preserve engineering context across sessions.
+                    Selected participant in the <strong>AWS AI League 2025</strong> by direct AWS invitation.
+                </p>
+            </div>
+
+            <!-- PERSONAL PROJECTS -->
+            <div class="section-title">
+                <span class="section-label">Personal Projects</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="two-col">
+                <div class="col-main">
+                    <div class="project-block">
+                        <div class="project-name">.brain — Central AI Brain</div>
+                        <div class="project-desc">Centralized persistent memory and knowledge-graph system for multi-AI orchestration. Enables Kiro, Claude, Copilot, and local LLMs to share architectural steering rules, domain contracts, and lessons learned with zero context loss.</div>
+                        <div class="job-tech" style="margin-top:0.4rem"><span>AI Orchestration</span><span>MCP</span><span>Kiro</span><span>Multi-agent</span></div>
+                    </div>
+                </div>
+                <div class="col-side">
+                    <div class="project-block">
+                        <div class="project-name">TrainVive</div>
+                        <div class="project-desc">Mobile fitness app featuring adaptive workout routines tailored to user progression. Combines deterministic calculation structures with lightweight AI personalization for minimal resource overhead. Pending Google Play release.</div>
+                        <div class="job-tech" style="margin-top:0.4rem"><span>Flutter</span><span>Dart</span><span>Adaptive AI</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TECHNICAL SKILLS -->
+            <div class="section-title">
+                <span class="section-label">Technical Skills</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-cat-title">Backend &amp; Languages</div>
+                    <div class="skill-tags"><span>Java 21/25</span><span>Spring Boot</span><span>Python</span><span>Flask</span><span>GraphQL</span><span>Dart/Flutter</span><span>JSP</span></div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Cloud &amp; DevOps</div>
+                    <div class="skill-tags"><span>AWS ECS/Fargate</span><span>Lambda</span><span>Step Functions</span><span>CodeArtifact</span><span>S3/CloudFront</span><span>Docker</span><span>SAM</span></div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Data &amp; Messaging</div>
+                    <div class="skill-tags"><span>Redis</span><span>Kafka</span><span>Debezium</span><span>DynamoDB</span><span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span></div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Architecture</div>
+                    <div class="skill-tags"><span>Microservices</span><span>Event-Driven</span><span>SDK Design</span><span>DDD</span><span>Clean Architecture</span><span>CDC</span></div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">Quality &amp; Security</div>
+                    <div class="skill-tags"><span>JaCoCo &gt;=90%</span><span>Checkstyle</span><span>PMD</span><span>Checkmarx SAST/SCA</span><span>JUnit</span><span>Mockito</span></div>
+                </div>
+                <div>
+                    <div class="skill-cat-title">AI &amp; Tooling</div>
+                    <div class="skill-tags"><span>Kiro</span><span>GitHub Copilot</span><span>Amazon Q</span><span>MCP</span><span>Subagents</span><span>Prompt Engineering</span></div>
+                </div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="section-title">
+                <span class="section-label">Education</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="edu-item">
+                <div>
+                    <div class="edu-title">B.S. in Information Technology Engineering</div>
+                    <div class="edu-sub">Universidad Tecnológica de Morelia (UTM)</div>
+                </div>
+                <span class="edu-year">2016 – 2020</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PAGE 4 (EN) — MACHINE-READABLE JSON (ATS / AI / LLM)          -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page dark-page">
+        <div class="page-content" style="background:#0f172a;">
+
+            <div class="section-title" style="margin-top:0.5rem;">
+                <span class="section-label" style="color:#06b6d4;border-color:rgba(6,182,212,0.4);background:rgba(6,182,212,0.1);">Machine-Readable Profile — ATS · AI · LLM</span>
+                <div class="section-title-line" style="background:linear-gradient(90deg, rgba(99,102,241,0.4), transparent);"></div>
+            </div>
+
+            <div class="json-block" style="font-size:5.5pt;height:calc(1056px - 120px);overflow:hidden;background:#0f172a;border-color:rgba(99,102,241,0.4);">
+<pre><code style="color:#e2e8f0;">{
+  "candidate": {
+    "name": "Luis Fernando Real Jaimes",
+    "role_target": ["Tech Lead", "Technical Product Owner (TPO)", "AI Engineering Lead", "Senior Backend Engineer"],
+    "location": "Morelia, Michoacan, Mexico",
+    "availability": ["Remote", "Hybrid", "On-site"],
+    "contact": {
+      "email": "luisitoreal01@gmail.com",
+      "phone": "+52 443 302 0586",
+      "linkedin": "linkedin.com/in/inglfr",
+      "github": "github.com/LFR-SnowBall"
+    },
+    "experience_years": 6,
+    "languages": ["Spanish (native)", "English (intermediate)"]
+  },
+  "core_skills": {
+    "backend": ["Java 21/25", "Spring Boot", "Python", "Flask", "GraphQL", "Dart", "Flutter", "JSP"],
+    "cloud_devops": ["AWS ECS", "Fargate", "Lambda", "Step Functions", "S3", "CloudFront", "CodeArtifact", "SAM", "Docker"],
+    "messaging_data": ["Kafka", "Debezium", "Redis", "DynamoDB", "MySQL", "PostgreSQL", "SQL Server", "CDC"],
+    "architecture": ["Microservices", "Event-Driven", "SDK Design", "DDD", "Clean Architecture", "Async Reconciliation"],
+    "quality_security": ["JaCoCo >=90%", "Checkstyle", "PMD", "Checkmarx SAST/SCA", "JUnit", "Mockito"],
+    "payments": ["DeUna/Prisma", "PayPal", "MercadoPago", "JusPay", "Idempotency", "Order Lifecycle Management"],
+    "ai_engineering": ["Kiro", "GitHub Copilot", "Amazon Q", "MCP", "Subagents", "Prompt Engineering", "AI Orchestration"],
+    "frontend": ["Angular", "Vue.js", "Flutter", "WordPress"]
+  },
+  "experience": [
+    {
+      "role": "Backend Engineer",
+      "company": "Cinepolis Digital Channels",
+      "period": "Jul 2023 - Oct 2026", "duration": "3 years 4 months",
+      "highlights": [
+        "Technical leadership of Tickets and Synchronization department",
+        "Architected Order Manager: central payments orchestrator for 7 countries",
+        "Led Python to Java/Spring Boot migration in Tickets and Payments domains",
+        "Integrated DeUna, PayPal, MercadoPago, JusPay with async Redis reconciliation",
+        "Real-time extractors with Debezium + Kafka for 500+ cinemas",
+        "Emergency Spain synchronizer: 500 cinemas in 5 minutes, built in one night",
+        "Pioneer AI-augmented engineering: autonomous Slack bot, 98% unit test generation",
+        "Designed .brain: centralized multi-AI memory orchestration system",
+        "AWS AI League 2025 participant by direct AWS invitation"
+      ]
+    },
+    {
+      "role": "Web Department Lead / Full Stack",
+      "company": "Knotion", "period": "Dec 2021 - Jul 2023",
+      "highlights": ["Led web department", "LARSA/MARSA student progress system", "Lambda+S3+CloudFront async PDF pipeline"]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Weenjoy / LinuxOpenSource", "period": "Dec 2019 - Jan 2023",
+      "highlights": ["Xamarin to Flutter migration", "GraphQL backend Python/Flask", "Loyalty platform"]
+    },
+    {
+      "role": "Full Stack Developer", "company": "LEGALEX GS", "period": "Apr 2021 - Dec 2021",
+      "highlights": ["Electronic signature system", "Dynamic document generation JSP"]
+    }
+  ],
+  "personal_projects": [
+    { "name": ".brain", "description": "Centralized persistent memory for multi-AI orchestration", "status": "Private-active" },
+    { "name": "TrainVive", "description": "Adaptive gym training app with AI-driven routines", "stack": "Flutter/Dart", "status": "Google Play pending" }
+  ],
+  "education": { "degree": "B.S. in Information Technology Engineering", "institution": "Universidad Tecnologica de Morelia", "period": "2016-2020" },
+  "awards": ["AWS AI League 2025 — direct AWS invitation, Amazon Q implementations"],
+  "keywords": ["Tech Lead","TPO","Senior Backend Engineer","Java","Spring Boot","AWS","Microservices",
+    "Payments","Fintech","AI Engineering","AI-Augmented Development","Prompt Engineering","MCP",
+    "Kiro","GitHub Copilot","Amazon Q","Remote","Hybrid","6 years experience","Architecture","Team Leadership"]
+}</code></pre>
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /viewer-en -->
+
+<script>
+    function setLang(lang) {
+        const isEn = (lang === 'en');
+        document.documentElement.lang = isEn ? 'en' : 'es';
+        document.getElementById('viewer-es').classList.toggle('hidden-lang', isEn);
+        document.getElementById('viewer-en').classList.toggle('hidden-lang', !isEn);
+        document.getElementById('btn-es').classList.toggle('active', !isEn);
+        document.getElementById('btn-en').classList.toggle('active', isEn);
+        document.getElementById('nav-lang-code').textContent = isEn ? 'en' : 'es';
+        document.getElementById('btn-print').textContent = isEn ? 'Print PDF' : 'Imprimir PDF';
+        document.title = isEn
+            ? 'Luis Fernando Real Jaimes — Tech Lead · Microservices Architect · AI-Augmented Engineering'
+            : 'Luis Fernando Real Jaimes — Tech Lead · Arquitecto de Microservicios · AI-Augmented Engineering';
+        try {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', isEn ? 'en' : 'es');
+            window.history.replaceState({}, '', url);
+        } catch (e) {}
+    }
+
+    (function initLang() {
+        const params = new URLSearchParams(window.location.search);
+        const hash = window.location.hash.replace('#', '').toLowerCase();
+        if (params.get('lang') === 'en' || hash === 'en') {
+            setLang('en');
+        }
+    })();
+</script>
 
 </body>
 </html>

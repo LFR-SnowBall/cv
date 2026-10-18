@@ -50,6 +50,39 @@ body {
 }
 .nav-brand span { color: var(--accent-2); }
 .nav-actions { display: flex; gap: 0.75rem; align-items: center; }
+.lang-group {
+    display: inline-flex;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 20px;
+    padding: 2px;
+    gap: 2px;
+}
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 3px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+.lang-btn:hover {
+    color: #ffffff;
+}
+.lang-btn.active {
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-1));
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.35);
+}
+.nav-divider {
+    width: 1px;
+    height: 18px;
+    background: rgba(99, 102, 241, 0.3);
+}
 .nav-btn {
     background: transparent;
     border: 1px solid rgba(99,102,241,0.4);
@@ -76,6 +109,9 @@ body {
     align-items: center;
     gap: 3rem;
     margin-top: 3.5rem;
+}
+.viewer.hidden-lang {
+    display: none !important;
 }
 
 /* Page */
@@ -457,6 +493,11 @@ h1 {
     }
 }
 
+/* Dark Page (for Machine-Readable JSON Page 4) */
+.physical-page.dark-page {
+    background-color: #0f172a !important;
+}
+
 /* Print */
 @media print {
     @page { size: letter; margin: 0; }
@@ -481,6 +522,9 @@ h1 {
         padding: 0 !important;
         display: block !important;
     }
+    .viewer.hidden-lang {
+        display: none !important;
+    }
     .physical-page {
         box-shadow: none !important;
         width: 816px !important;
@@ -492,6 +536,9 @@ h1 {
         break-inside: avoid !important;
         margin: 0 !important;
         padding: 0 !important;
+    }
+    .physical-page.dark-page {
+        background-color: #0f172a !important;
     }
     .physical-page:last-child {
         page-break-after: auto !important;
