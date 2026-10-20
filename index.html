@@ -46,8 +46,13 @@
 <body>
 
 <nav class="top-navbar">
-    <span class="nav-brand">$ <span>luis-fernando</span> --cv --mode tech-lead --lang <span id="nav-lang-code">es</span></span>
+    <span class="nav-brand">$ <span>luis-fernando</span> --<span id="nav-view-code">cv</span> --mode tech-lead --lang <span id="nav-lang-code">es</span></span>
     <div class="nav-actions">
+        <div class="lang-group" role="group" aria-label="View selector">
+            <button id="btn-cv" class="lang-btn active" onclick="setView('cv')" type="button">Currículum</button>
+            <button id="btn-portfolio" class="lang-btn" onclick="setView('portfolio')" type="button">Portafolio</button>
+        </div>
+        <div class="nav-divider"></div>
         <div class="lang-group" role="group" aria-label="Language selector">
             <button id="btn-es" class="lang-btn active" onclick="setLang('es')" type="button">ES</button>
             <button id="btn-en" class="lang-btn" onclick="setLang('en')" type="button">EN</button>
@@ -806,32 +811,456 @@
 
 </div><!-- /viewer-en -->
 
+
+<!-- ██████████████████████████████████████████████████████████████ -->
+<!--             PORTAFOLIO DE SERVICIOS — ESPAÑOL (ES)             -->
+<!-- ██████████████████████████████████████████████████████████████ -->
+<div id="viewer-portfolio-es" class="viewer hidden-lang">
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PORTAFOLIO PÁGINA 1 (ES) — VALOR ESTRATÉGICO + SERVICIOS 1–3  -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- HEADER -->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <div class="portfolio-banner">Portafolio de Servicios &amp; Consultoría &nbsp;·&nbsp; <a href="https://linuxopensource.org" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">🌐 linuxopensource.org</a></div>
+                    <h1>Luis Fernando<br>Real Jaimes</h1>
+                    <p class="headline">Tech Lead &nbsp;·&nbsp; Arquitectura de Microservicios &amp; Pagos &nbsp;·&nbsp; AI-Augmented Engineering</p>
+                    <div class="badge-row">
+                        <span class="badge badge-indigo">AI Engineering &amp; MCP</span>
+                        <span class="badge badge-cyan">Java 21/25 · Spring Boot</span>
+                        <span class="badge badge-green">Fintech &amp; Pagos Digitales</span>
+                        <span class="badge badge-slate">AWS Cloud &amp; CDC</span>
+                        <span class="badge badge-cyan">Rescate &amp; Migración</span>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="profile.jpg" alt="Luis Fernando Real Jaimes"
+                         onerror="this.parentElement.innerHTML='<div class=\'header-photo-placeholder\'>foto<br>profile.jpg</div>'">
+                </div>
+            </div>
+
+            <!-- VALOR ESTRATÉGICO -->
+            <div class="section-title">
+                <span class="section-label">Valor Estratégico</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="ai-highlight" style="margin-bottom:0.9rem;">
+                <div class="ai-highlight-title">// Ingeniería aumentada por IA y arquitecturas listas para escalar sin inflar costos</div>
+                <p>
+                    Ayudo a empresas tecnológicas, startups y equipos de ingeniería a <strong>modernizar sistemas críticos, integrar pasarelas transaccionales
+                    y adoptar Inteligencia Artificial generativa de forma real en su ciclo de desarrollo</strong>.
+                    Con más de 6 años diseñando plataformas que operan en 7 países y sincronizan más de 500 sedes en tiempo real,
+                    no entrego código aislado: construyo <strong>ecosistemas modulares, asíncronos y autónomos</strong> que multiplican la velocidad
+                    de entrega de tu equipo, blindan la calidad (cobertura &ge; 90%) y reducen la factura mensual de nube en AWS.
+                </p>
+            </div>
+
+            <!-- CATÁLOGO DE SERVICIOS -->
+            <div class="section-title">
+                <span class="section-label">Catálogo de Servicios</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <!-- Servicio 1 -->
+            <div class="service-card">
+                <div class="service-icon-box">🤖</div>
+                <div class="service-body">
+                    <div class="service-title">1. AI-Augmented Engineering &amp; Orquestación de Agentes</div>
+                    <div class="service-subtitle">Transforma tu equipo de desarrollo en una célula de alta velocidad asistida por IA</div>
+                    <ul class="job-desc">
+                        <li><strong>Arquitectura de Memoria Centralizada (<code>.brain</code>):</strong> Diseño de repositorios de contexto vivo, reglas de arquitectura y grafos de impacto para que múltiples agentes (Kiro, Claude, Copilot, Amazon Q) trabajen sin alucinaciones ni pérdida de contexto.</li>
+                        <li><strong>Agentes Autónomos de Soporte y Diagnóstico:</strong> Bots integrados en Slack + logs de AWS + Jira/Confluence vía <strong>MCP</strong> que detectan incidentes en tiempo real, diagnostican la causa raíz y proponen el fix exacto en código.</li>
+                        <li><strong>Automatización de Calidad y Pruebas:</strong> Subagentes especializados capaces de generar hasta el <strong>98% de suites de pruebas unitarias</strong> y corregir hallazgos de Checkmarx/Checkstyle antes del commit.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="service-card cyan-accent">
+                <div class="service-icon-box">💳</div>
+                <div class="service-body">
+                    <div class="service-title">2. Arquitectura de Pagos Digitales &amp; Orquestación Transaccional</div>
+                    <div class="service-subtitle">Flujos de cobro resilientes, multi-país y sin pérdida de órdenes</div>
+                    <ul class="job-desc">
+                        <li><strong>Orquestadores de Ciclo de Vida (Order Manager):</strong> Diseño de motores centrales de órdenes con idempotencia estricta, manejo de estados distribuidos y validación de invariantes de negocio.</li>
+                        <li><strong>Integración Multi-Pasarela:</strong> Experiencia probada integrando <strong>PayPal, MercadoPago, DeUna (Prisma Payway) y JusPay</strong> bajo contratos canónicos unificados y SDKs empresariales reutilizables.</li>
+                        <li><strong>Reconciliación Asíncrona y Enrutamiento Dinámico:</strong> Workers sobre Redis/Kafka para recuperación automática de transacciones interrumpidas y ruteo inteligente por país, sucursal o procesador.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-card green-accent">
+                <div class="service-icon-box">🚀</div>
+                <div class="service-body">
+                    <div class="service-title">3. Modernización de Sistemas Legados &amp; Rescate de Proyectos</div>
+                    <div class="service-subtitle">De monolitos frágiles o proyectos detenidos a microservicios Java/Spring Boot en producción</div>
+                    <ul class="job-desc">
+                        <li><strong>Migración Acelerada (Python / Legado &rarr; Java 21/25 &amp; Spring Boot):</strong> Evolución ordenada hacia arquitecturas tipadas de alto rendimiento con fallback seguro para clientes no migrados y cero regresiones.</li>
+                        <li><strong>Rescate Técnico (SWAT / Cowboys):</strong> Intervención en productos abandonados o con deuda técnica crítica para estabilizarlos, documentarlos y llevarlos a producción rentable en semanas.</li>
+                        <li><strong>Optimización de Costos Cloud (FinOps):</strong> Refactorización de servicios y consultas para reducir drásticamente el consumo de cómputo en AWS ECS/Fargate y bases de datos.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PORTAFOLIO PÁGINA 2 (ES) — SERVICIOS 4–5 + CASOS + CONTACTO   -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <div class="section-title">
+                <span class="section-label">Catálogo de Servicios (cont.)</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="service-card">
+                <div class="service-icon-box">☁️</div>
+                <div class="service-body">
+                    <div class="service-title">4. Arquitectura Cloud AWS, Sincronización en Tiempo Real (CDC) &amp; DevSecOps</div>
+                    <div class="service-subtitle">Infraestructura distribuida, extracción de datos en vivo y pipelines blindados</div>
+                    <ul class="job-desc">
+                        <li><strong>Sincronización en Tiempo Real (Debezium + Kafka + DynamoDB):</strong> Extractores CDC para replicar bases de datos locales (SQL Server, PostgreSQL, MySQL) hacia la nube en milisegundos para operación o Data Science.</li>
+                        <li><strong>Infraestructura Serverless &amp; Contenedores:</strong> Despliegues en AWS ECS/Fargate, Lambda, Step Functions, S3, CloudFront, CodeArtifact y AWS SAM.</li>
+                        <li><strong>Pipelines CI/CD con Gates de Grado Financiero:</strong> Automatización con cobertura obligatoria JaCoCo &ge; 90%, Checkstyle, PMD y análisis de vulnerabilidades Checkmarx One (SAST/SCA).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="service-card cyan-accent">
+                <div class="service-icon-box">📱</div>
+                <div class="service-body">
+                    <div class="service-title">5. Desarrollo End-to-End Web &amp; Mobile Multiplataforma</div>
+                    <div class="service-subtitle">Productos digitales completos desde la arquitectura de datos hasta la tienda de aplicaciones</div>
+                    <ul class="job-desc">
+                        <li><strong>Apps Móviles Nativas y Multiplataforma (Flutter / Dart):</strong> Desarrollo y migración (desde Xamarin/nativo) para iOS, Android y Web con lectura QR, pagos, motores adaptativos y consumo GraphQL/REST.</li>
+                        <li><strong>Plataformas Web Empresariales y EdTech:</strong> Dashboards analíticos en Angular y Vue.js, generación asíncrona de reportes PDF masivos con notificación por WebSockets y portales dinámicos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ¿POR QUÉ TRABAJAR CONMIGO? -->
+            <div class="section-title">
+                <span class="section-label">¿Por Qué Trabajar Conmigo?</span>
+                <div class="section-title-line"></div>
+            </div>
+            <p class="profile-text" style="margin-bottom:0.8rem;">
+                <strong>1. Velocidad de Entrega Multiplicada por IA:</strong> Combino liderazgo técnico hands-on con flujos de agentes propios para entregar en días lo que a un equipo tradicional le toma meses.<br>
+                <strong>2. Filosofía de Cero Fricción Operativa:</strong> Diseño sistemas modulares, dinámicos y auto-recuperables para que tu equipo de ingeniería construya producto en lugar de vivir apagando incendios.<br>
+                <strong>3. Visión de Negocio + Rigor Técnico:</strong> Cada decisión arquitectónica busca reducir costos de nube, proteger ingresos en preventas de alto tráfico y mantener calidad auditable.
+            </p>
+
+            <!-- CASOS DE ÉXITO -->
+            <div class="section-title">
+                <span class="section-label">Casos de Éxito &amp; Plataformas Construidas</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="case-grid">
+                <div class="case-card">
+                    <div class="case-title">Orquestación de Pagos &amp; CDC (7 Países)</div>
+                    <div class="case-desc">Arquitectura de Order Manager, SDK canónico Java 21/25, pasarelas internacionales y sincronizador asíncrono capaz de actualizar <strong>500 cines en 5 minutos</strong>.</div>
+                </div>
+                <div class="case-card cyan-top">
+                    <div class="case-title">Ecosistema .brain &amp; Soporte Autónomo IA</div>
+                    <div class="case-desc">Memoria multi-agente persistente con <code>git-crypt</code> y bot en Slack conectado a logs/Jira/Confluence vía MCP, logrando <strong>98% de pruebas unitarias automatizadas</strong>.</div>
+                </div>
+                <div class="case-card green-top">
+                    <div class="case-title">Plataforma EdTech LARSA/MARSA</div>
+                    <div class="case-desc">Sistema de analítica estudiantil en Angular + Spring Boot/Laravel con pipeline asíncrono de reportes PDF en AWS Lambda, WebSockets, S3 y CloudFront.</div>
+                </div>
+                <div class="case-card">
+                    <div class="case-title">TrainVive &amp; Loyalty Multiplataforma</div>
+                    <div class="case-desc">App móvil de entrenamiento adaptativo con IA en Flutter/Dart y migración completa de plataforma de lealtad desde Xamarin con backend GraphQL.</div>
+                </div>
+            </div>
+
+            <!-- CALL TO ACTION -->
+            <div class="portfolio-cta">
+                <div>
+                    <div class="portfolio-cta-title">¿Listo para escalar tu arquitectura o acelerar a tu equipo con IA?</div>
+                    <div class="portfolio-cta-text">Agenda una llamada técnica para evaluar tu plataforma, destrabar una migración o integrar flujos de ingeniería aumentada por IA.</div>
+                    <div class="portfolio-cta-tags">
+                        <a href="https://linuxopensource.org" target="_blank" rel="noopener" style="background:var(--accent-2);color:#fff;border-color:var(--accent-2);">🌐 linuxopensource.org</a>
+                        <a href="mailto:luisitoreal01@gmail.com">✉️ luisitoreal01@gmail.com</a>
+                        <a href="tel:+524433020586">📱 +52 443 302 0586</a>
+                        <a href="https://linkedin.com/in/inglfr" target="_blank" rel="noopener">🔗 linkedin.com/in/inglfr</a>
+                        <a href="https://github.com/LFR-SnowBall" target="_blank" rel="noopener">🐙 github.com/LFR-SnowBall</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /viewer-portfolio-es -->
+
+
+<!-- ██████████████████████████████████████████████████████████████ -->
+<!--              SERVICES PORTFOLIO — ENGLISH (EN)                 -->
+<!-- ██████████████████████████████████████████████████████████████ -->
+<div id="viewer-portfolio-en" class="viewer hidden-lang">
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PORTFOLIO PAGE 1 (EN) — STRATEGIC VALUE + SERVICES 1–3        -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <!-- HEADER -->
+            <div class="header-wrap">
+                <div class="header-left">
+                    <div class="portfolio-banner">Services &amp; Technical Consulting Portfolio &nbsp;·&nbsp; <a href="https://linuxopensource.org" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">🌐 linuxopensource.org</a></div>
+                    <h1>Luis Fernando<br>Real Jaimes</h1>
+                    <p class="headline">Tech Lead &nbsp;·&nbsp; Microservices &amp; Payments Architecture &nbsp;·&nbsp; AI-Augmented Engineering</p>
+                    <div class="badge-row">
+                        <span class="badge badge-indigo">AI Engineering &amp; MCP</span>
+                        <span class="badge badge-cyan">Java 21/25 · Spring Boot</span>
+                        <span class="badge badge-green">Fintech &amp; Digital Payments</span>
+                        <span class="badge badge-slate">AWS Cloud &amp; CDC</span>
+                        <span class="badge badge-cyan">Legacy Modernization</span>
+                    </div>
+                </div>
+                <div class="header-photo">
+                    <img src="profile.jpg" alt="Luis Fernando Real Jaimes"
+                         onerror="this.parentElement.innerHTML='<div class=\'header-photo-placeholder\'>photo<br>profile.jpg</div>'">
+                </div>
+            </div>
+
+            <!-- STRATEGIC VALUE -->
+            <div class="section-title">
+                <span class="section-label">Strategic Value</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="ai-highlight" style="margin-bottom:0.9rem;">
+                <div class="ai-highlight-title">// AI-augmented engineering &amp; mission-critical architectures built to scale cost-effectively</div>
+                <p>
+                    I partner with tech companies, startups, and engineering organizations to <strong>modernize mission-critical backends,
+                    orchestrate multi-country payment flows, and embed generative AI directly into the software delivery lifecycle</strong>.
+                    With 6+ years designing platforms operating across 7 countries and synchronizing 500+ venues in real time,
+                    I don't just ship code: I build <strong>modular, asynchronous, self-healing ecosystems</strong> that multiply your team's
+                    delivery velocity, enforce strict quality gates (&ge; 90% coverage), and reduce monthly AWS cloud spend.
+                </p>
+            </div>
+
+            <!-- SERVICES CATALOG -->
+            <div class="section-title">
+                <span class="section-label">Services Catalog</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon-box">🤖</div>
+                <div class="service-body">
+                    <div class="service-title">1. AI-Augmented Engineering &amp; Multi-Agent Orchestration</div>
+                    <div class="service-subtitle">Turn your engineering team into a high-velocity AI-augmented delivery pod</div>
+                    <ul class="job-desc">
+                        <li><strong>Centralized AI Memory Architecture (<code>.brain</code>):</strong> Design of persistent context repositories, steering rules, and blast-radius knowledge graphs enabling multiple AI agents (Kiro, Claude, Copilot, Amazon Q) to operate with zero context loss.</li>
+                        <li><strong>Autonomous Support &amp; Root-Cause Diagnostic Bots:</strong> Slack agents connected to AWS logs, Jira, and Confluence via <strong>MCP</strong> that triage production errors in real time and propose exact code fixes.</li>
+                        <li><strong>Automated Quality &amp; Test Generation:</strong> Specialized subagents and workflows that generate up to <strong>98% of unit test suites</strong> and auto-remediate Checkmarx/Checkstyle findings prior to commit.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card cyan-accent">
+                <div class="service-icon-box">💳</div>
+                <div class="service-body">
+                    <div class="service-title">2. Digital Payments Architecture &amp; Transactional Orchestration</div>
+                    <div class="service-subtitle">Resilient, multi-country payment pipelines with zero lost orders</div>
+                    <ul class="job-desc">
+                        <li><strong>Order Lifecycle Orchestrators (Order Manager):</strong> Central state-machine engines with strict idempotency, distributed locking, and booking invariant validation.</li>
+                        <li><strong>Multi-Gateway Integration:</strong> Proven track record integrating <strong>PayPal, MercadoPago, DeUna (Prisma Payway), and JusPay</strong> using unified canonical contracts and shared enterprise SDKs.</li>
+                        <li><strong>Async Reconciliation &amp; Dynamic Routing:</strong> Redis/Kafka background workers for automated recovery of interrupted transactions and dynamic processor routing per country or venue.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card green-accent">
+                <div class="service-icon-box">🚀</div>
+                <div class="service-body">
+                    <div class="service-title">3. Legacy System Modernization &amp; Project Rescue</div>
+                    <div class="service-subtitle">From fragile monoliths or stalled codebases to production-grade Java/Spring Boot microservices</div>
+                    <ul class="job-desc">
+                        <li><strong>Accelerated Migrations (Python / Legacy &rarr; Java 21/25 &amp; Spring Boot):</strong> Zero-downtime incremental migrations with backward-compatible fallback for legacy clients and zero production regressions.</li>
+                        <li><strong>SWAT Project Rescue (Cowboys Methodology):</strong> Rapid recovery of abandoned or high-debt software products, stabilizing architecture and taking them to revenue-generating production in weeks.</li>
+                        <li><strong>Cloud Cost Optimization (FinOps):</strong> Service and database refactoring to significantly reduce AWS ECS/Fargate compute footprint and monthly billing.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <!--  PORTFOLIO PAGE 2 (EN) — SERVICES 4–5 + CASE STUDIES + CTA     -->
+    <!-- ══════════════════════════════════════════════════════════════ -->
+    <div class="physical-page">
+        <div class="page-content">
+
+            <div class="section-title">
+                <span class="section-label">Services Catalog (cont.)</span>
+                <div class="section-title-line"></div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-icon-box">☁️</div>
+                <div class="service-body">
+                    <div class="service-title">4. AWS Cloud Architecture, Real-Time CDC &amp; DevSecOps</div>
+                    <div class="service-subtitle">Distributed cloud infrastructure, live data streaming, and hardened CI/CD pipelines</div>
+                    <ul class="job-desc">
+                        <li><strong>Real-Time Data Synchronization (Debezium + Kafka + DynamoDB):</strong> CDC extractors streaming on-premise databases (SQL Server, PostgreSQL, MySQL) to AWS in milliseconds for live operations and Data Science.</li>
+                        <li><strong>Serverless &amp; Container Infrastructure:</strong> Production deployments on AWS ECS/Fargate, Lambda, Step Functions, S3, CloudFront, CodeArtifact, and AWS SAM.</li>
+                        <li><strong>Enterprise CI/CD Quality Gates:</strong> Automated pipelines enforcing JaCoCo &ge; 90% coverage, Checkstyle, PMD, and Checkmarx One (SAST/SCA) security scans.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card cyan-accent">
+                <div class="service-icon-box">📱</div>
+                <div class="service-body">
+                    <div class="service-title">5. End-to-End Cross-Platform Mobile &amp; Web Engineering</div>
+                    <div class="service-subtitle">Full-lifecycle digital products from backend APIs to mobile app stores</div>
+                    <ul class="job-desc">
+                        <li><strong>Cross-Platform Mobile Apps (Flutter / Dart):</strong> Architecture and migration (from Xamarin/native) for iOS, Android, and Web featuring QR scanning, payments, adaptive AI routines, and GraphQL/REST APIs.</li>
+                        <li><strong>Enterprise Web &amp; EdTech Platforms:</strong> Real-time analytics dashboards in Angular and Vue.js, asynchronous bulk PDF report pipelines via AWS Lambda + WebSockets, and custom CMS solutions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- WHY WORK WITH ME -->
+            <div class="section-title">
+                <span class="section-label">Why Work With Me?</span>
+                <div class="section-title-line"></div>
+            </div>
+            <p class="profile-text" style="margin-bottom:0.8rem;">
+                <strong>1. AI-Multiplied Delivery Speed:</strong> I combine hands-on technical leadership with proprietary AI agent workflows to deliver in days what traditional teams take months to build.<br>
+                <strong>2. Zero-Friction Operational Philosophy:</strong> I design modular, dynamic, self-healing systems so your engineering team focuses on shipping product instead of firefighting.<br>
+                <strong>3. Business + Engineering Alignment:</strong> Every architectural decision targets lower AWS spend, high-traffic presale reliability, and auditable code quality.
+            </p>
+
+            <!-- PROVEN CASE STUDIES -->
+            <div class="section-title">
+                <span class="section-label">Proven Case Studies &amp; Platforms Built</span>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="case-grid">
+                <div class="case-card">
+                    <div class="case-title">Multi-Country Payments &amp; CDC (7 Countries)</div>
+                    <div class="case-desc">Architected Order Manager, Java 21/25 canonical SDK, global payment gateways, and an async synchronizer updating <strong>500 cinemas in 5 minutes</strong>.</div>
+                </div>
+                <div class="case-card cyan-top">
+                    <div class="case-title">.brain Ecosystem &amp; Autonomous AI Support</div>
+                    <div class="case-desc">Persistent multi-AI memory with <code>git-crypt</code> and Slack diagnostic bot connected to logs/Jira/Confluence via MCP, achieving <strong>98% automated unit test generation</strong>.</div>
+                </div>
+                <div class="case-card green-top">
+                    <div class="case-title">LARSA/MARSA EdTech Analytics Platform</div>
+                    <div class="case-desc">Student progress platform in Angular + Spring Boot/Laravel with asynchronous PDF report generation on AWS Lambda, WebSockets, S3, and CloudFront.</div>
+                </div>
+                <div class="case-card">
+                    <div class="case-title">TrainVive &amp; Cross-Platform Loyalty Apps</div>
+                    <div class="case-desc">Adaptive AI workout mobile app in Flutter/Dart and full Xamarin-to-Flutter loyalty platform migration powered by a Python/Flask GraphQL backend.</div>
+                </div>
+            </div>
+
+            <!-- CALL TO ACTION -->
+            <div class="portfolio-cta">
+                <div>
+                    <div class="portfolio-cta-title">Ready to scale your architecture or supercharge your team with AI?</div>
+                    <div class="portfolio-cta-text">Schedule a technical session to evaluate your platform, unblock a critical migration, or deploy AI-augmented engineering workflows.</div>
+                    <div class="portfolio-cta-tags">
+                        <a href="https://linuxopensource.org" target="_blank" rel="noopener" style="background:var(--accent-2);color:#fff;border-color:var(--accent-2);">🌐 linuxopensource.org</a>
+                        <a href="mailto:luisitoreal01@gmail.com">✉️ luisitoreal01@gmail.com</a>
+                        <a href="tel:+524433020586">📱 +52 443 302 0586</a>
+                        <a href="https://linkedin.com/in/inglfr" target="_blank" rel="noopener">🔗 linkedin.com/in/inglfr</a>
+                        <a href="https://github.com/LFR-SnowBall" target="_blank" rel="noopener">🐙 github.com/LFR-SnowBall</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /viewer-portfolio-en -->
+
 <script>
-    function setLang(lang) {
-        const isEn = (lang === 'en');
+    let currentView = 'cv';
+    let currentLang = 'es';
+
+    function updateUI() {
+        const isEn = (currentLang === 'en');
+        const isPortfolio = (currentView === 'portfolio');
+
         document.documentElement.lang = isEn ? 'en' : 'es';
-        document.getElementById('viewer-es').classList.toggle('hidden-lang', isEn);
-        document.getElementById('viewer-en').classList.toggle('hidden-lang', !isEn);
+
+        document.getElementById('viewer-es').classList.toggle('hidden-lang', isEn || isPortfolio);
+        document.getElementById('viewer-en').classList.toggle('hidden-lang', !isEn || isPortfolio);
+        document.getElementById('viewer-portfolio-es').classList.toggle('hidden-lang', isEn || !isPortfolio);
+        document.getElementById('viewer-portfolio-en').classList.toggle('hidden-lang', !isEn || !isPortfolio);
+
         document.getElementById('btn-es').classList.toggle('active', !isEn);
         document.getElementById('btn-en').classList.toggle('active', isEn);
-        document.getElementById('nav-lang-code').textContent = isEn ? 'en' : 'es';
+        document.getElementById('btn-cv').classList.toggle('active', !isPortfolio);
+        document.getElementById('btn-portfolio').classList.toggle('active', isPortfolio);
+
+        document.getElementById('btn-cv').textContent = isEn ? 'Resume' : 'Currículum';
+        document.getElementById('btn-portfolio').textContent = isEn ? 'Portfolio' : 'Portafolio';
         document.getElementById('btn-print').textContent = isEn ? 'Print PDF' : 'Imprimir PDF';
-        document.title = isEn
-            ? 'Luis Fernando Real Jaimes — Tech Lead · Microservices Architect · AI-Augmented Engineering'
-            : 'Luis Fernando Real Jaimes — Tech Lead · Arquitecto de Microservicios · AI-Augmented Engineering';
+
+        document.getElementById('nav-view-code').textContent = isPortfolio ? 'portfolio' : 'cv';
+        document.getElementById('nav-lang-code').textContent = isEn ? 'en' : 'es';
+
+        if (isPortfolio) {
+            document.title = isEn
+                ? 'Services Portfolio — Luis Fernando Real Jaimes'
+                : 'Portafolio de Servicios — Luis Fernando Real Jaimes';
+        } else {
+            document.title = isEn
+                ? 'Luis Fernando Real Jaimes — Tech Lead · Microservices Architect · AI-Augmented Engineering'
+                : 'Luis Fernando Real Jaimes — Tech Lead · Arquitecto de Microservicios · AI-Augmented Engineering';
+        }
+
         try {
             const url = new URL(window.location);
-            url.searchParams.set('lang', isEn ? 'en' : 'es');
+            url.searchParams.set('view', currentView);
+            url.searchParams.set('lang', currentLang);
             window.history.replaceState({}, '', url);
         } catch (e) {}
     }
 
-    (function initLang() {
+    function setView(view) {
+        currentView = (view === 'portfolio') ? 'portfolio' : 'cv';
+        updateUI();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setLang(lang) {
+        currentLang = (lang === 'en') ? 'en' : 'es';
+        updateUI();
+    }
+
+    (function init() {
         const params = new URLSearchParams(window.location.search);
         const hash = window.location.hash.replace('#', '').toLowerCase();
         if (params.get('lang') === 'en' || hash === 'en') {
-            setLang('en');
+            currentLang = 'en';
         }
+        if (params.get('view') === 'portfolio' || hash === 'portfolio' || hash === 'portafolio') {
+            currentView = 'portfolio';
+        }
+        updateUI();
     })();
 </script>
 
