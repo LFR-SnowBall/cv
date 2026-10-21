@@ -615,15 +615,18 @@ h1 {
 }
 
 /* ── Services Portfolio ── */
+#portfolio-container .page-content,
 #viewer-portfolio-es .page-content,
 #viewer-portfolio-en .page-content {
     padding: 32px 48px 28px;
 }
+#portfolio-container .header-wrap,
 #viewer-portfolio-es .header-wrap,
 #viewer-portfolio-en .header-wrap {
     margin-bottom: 0.75rem;
     padding-bottom: 0.75rem;
 }
+#portfolio-container .section-title,
 #viewer-portfolio-es .section-title,
 #viewer-portfolio-en .section-title {
     margin: 0.7rem 0 0.45rem;
@@ -802,6 +805,7 @@ h1 {
         overflow: hidden;
     }
     .page-content,
+    #portfolio-container .page-content,
     #viewer-portfolio-es .page-content,
     #viewer-portfolio-en .page-content {
         padding: 28px 24px 26px;
@@ -828,6 +832,7 @@ h1 {
         gap: 1.25rem;
     }
     .page-content,
+    #portfolio-container .page-content,
     #viewer-portfolio-es .page-content,
     #viewer-portfolio-en .page-content {
         padding: 22px 16px 20px;
